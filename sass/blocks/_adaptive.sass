@@ -72,6 +72,26 @@
               &.show a 
                 opacity: 1
                 visibility: visible
+  .content-full
+    & .content-wrap 
+      flex-direction: column 
+      & .block 
+        width: 100%
+        margin: auto
+  .service 
+    & .service-wrap 
+      & .block 
+        width: 100%
+@media screen and ( max-width: 750px )
+  .products 
+    & .title 
+      width: 100%
+    & .products-wrap 
+      flex-direction: column
+      margin-top: 0 
+      & .card 
+        margin: 50px auto 0 
+        width: 100%
 @media screen and ( max-width: 550px )
   .header
     & .overlay 

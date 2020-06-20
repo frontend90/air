@@ -32,14 +32,10 @@ $(window).scroll(function () {
 jQuery('a.popup-video').YouTubePopUp();
 
 /************    burger      *************/
-$('.burger').click(function () {
-  $('.burger').toggleClass('active');
-  $('.main-menu').toggleClass('show');
-});
-
-$('.main-menu a').click(function () {
-  $('.main-menu').removeClass('show');
-  $('.burger').removeClass('active');
+let user_icon = document.querySelector('.burger');
+user_icon.addEventListener("click", function (e) {
+  let user_menu = document.querySelector('.main-menu');
+  user_menu.classList.toggle('show');
 });
 
 document.documentElement.addEventListener("click", function (e) {
@@ -48,3 +44,11 @@ document.documentElement.addEventListener("click", function (e) {
     user_menu.classList.remove('show');
   }
 });
+
+$('.main-menu a').click(function () {
+  $('.main-menu').removeClass('show');
+  $('.burger').removeClass('active');
+});
+
+/***************    WOW     ********************/
+new WOW().init();

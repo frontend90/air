@@ -1,0 +1,54 @@
+.service
+  padding: 100px 0 
+  background: #fafafa
+  & .service-wrap 
+    display: flex 
+    flex-wrap: wrap
+    justify-content: center
+    & .block 
+      width: 32%
+      background: #ffffff
+      margin: 2px 
+      padding: 50px 
+      position: relative
+      &:hover .icon
+        transform: translate3d(0, -100%, 0)
+        opacity: 0
+      &:hover .content
+        transform: translate3d(0, -30%, 0)
+      & .icon 
+        transition: .3s linear 
+        transition-timing-function: cubic-bezier(.7,1,.7,1)
+        & .fas 
+          +solid 
+          font-size: 30px
+          color: #999caa
+      & .content 
+        margin-top: 30px 
+        transition: .3s linear 
+        transition-timing-function: cubic-bezier(.7,1,.7,1)
+        & h5 
+          +bold 
+          color: #515769
+          line-height: 1.4
+          font-size: 22px 
+        & p 
+          margin-top: 15px 
+          font-size: 15px
+          color: #a6a7aa
+      & a 
+        position: absolute
+        width: 100%
+        height: 100% 
+        top: 0
+        left: 0
+    & .active-main 
+      background: #17bed2
+      & .icon 
+        & .fas
+          color: #ffffff
+      & .content
+        & h5 
+          color: #ffffff
+        & p 
+          color: #ffffff
