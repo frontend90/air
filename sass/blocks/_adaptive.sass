@@ -1,0 +1,85 @@
+@media screen and ( max-width: 800px )
+  .header
+    & .overlay 
+      & .top-menu 
+        background: #ffffff
+        & .top-menu-wrap 
+          & .logo 
+            & h2 
+              & a 
+                color: #5A5D61
+          & .menu 
+            & .burger 
+              display: flex 
+              align-items: center
+              justify-content: flex-start 
+              width: 25px 
+              height: 15px
+              position: relative 
+              cursor: pointer
+              z-index: 9999
+              &.active span 
+                width: 21px 
+                background: #17bed2
+              &.active::before 
+                width: 21px 
+                background: #17bed2
+              &.active::after 
+                background: #17bed2
+              & span 
+                background: #515769
+                height: 1px 
+                width: 16px 
+                transition: .3s linear 
+              &::before
+                content: ''
+                position: absolute
+                width: 10px 
+                height: 1px 
+                background: #515769
+                top: 0
+                transition: .3s linear 
+              &::after
+                content: ''
+                position: absolute
+                width: 21px 
+                height: 1px 
+                background: #515769
+                bottom: 0
+                transition: .3s linear  
+            & .main-menu 
+              position: fixed
+              left: 0
+              width: 100%
+              background: #ffffff
+              transition: .3s linear
+              height: 0
+              margin-top: 20px 
+              & a 
+                display: block 
+                opacity: 0
+                visibility: hidden
+                margin: 0
+                color: #515769
+                line-height: 1.4 
+                padding: 12px 12px 12px 20px 
+                +semi 
+                text-transform: uppercase
+                font-size: 13px 
+                transition: .3s linear 
+              &.show 
+                height: 50%
+              &.show a 
+                opacity: 1
+                visibility: visible
+@media screen and ( max-width: 550px )
+  .header
+    & .overlay 
+      & .header-title
+        & h2 
+          font-size: 50px 
+@media screen and ( max-width: 370px )
+  .header
+    & .overlay 
+      & .header-title
+        padding-top: 50px 
