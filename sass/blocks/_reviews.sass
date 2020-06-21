@@ -1,0 +1,41 @@
+.reviews
+  padding: 80px 0 
+  & .title 
+    & h5 
+      font-size: 30px 
+      +bold 
+      color: #515769
+      line-height: 1.4
+  & .reviews-slider 
+    margin-top: 25px 
+    & .slick-list 
+      overflow: hidden
+      & .slick-track 
+        display: flex 
+        & .reviews-slider-block 
+          position: relative
+          max-width: 66%
+          padding-left: 40px 
+          &::before
+            content: '“'
+            position: absolute
+            top: 0
+            left: 0
+            display: inline-block 
+            font-size: 60px
+            color: #17bed2
+            line-height: 1
+          & p 
+            margin-bottom: 20px 
+            font-size: 17px 
+            color: #a6a7aa
+            line-height: 1.4 
+          & .name-wrap 
+            & p 
+              font-size: 14px 
+              color: #81848f
+              +bold 
+              & span 
+                font-size: 15px 
+                color: #a6a7aa
+                +reg 

@@ -58,3 +58,22 @@ $('[data-fancybox]').fancybox({
   arrows: false,
   infobar: false
 });
+
+/************    reviews slick      **************/
+$('.reviews-slider').slick({
+  arrows: false,
+  dots: false,
+  autoplay: true
+});
+
+/****************      scroll anchor     ***************/
+$(window).scroll(function () {
+
+  var wScroll = $(this).scrollTop();
+
+  if (wScroll > 260) {
+    $('.anchor').addClass('active');
+  } else {
+    $('.anchor').removeClass('active');
+  };
+});

@@ -1,0 +1,38 @@
+.footer
+  padding: 80px 0 40px 0 
+  & .footer-wrap 
+    display: flex 
+    justify-content: space-around
+    padding-bottom: 80px 
+    & .block 
+      & a 
+        display: block 
+        margin-bottom: 15px 
+        font-size: 16px
+        +semi 
+        color: #515769
+        &:hover
+          opacity: .7
+  & .copyright 
+    border-top: 1px solid #edf0f2
+    padding-top: 40px 
+    & .copy-wrap 
+      display: flex 
+      align-items: center
+      justify-content: space-between
+      & h2 
+        +bold 
+        font-size: 20px
+        color: #5A5D61
+        & span 
+          color: #17BED2
+      & p 
+        font-size: 15px 
+        & a 
+          +bold 
+          color: #81848f
+          &:hover
+            opacity: .7
+        & span 
+          color: #a6a7aa
+
