@@ -1,0 +1,81 @@
+.fancybox-block
+  padding: 30px 
+  width: 730px
+  position: relative
+  & .title 
+    & h5 
+      font-size: 22px 
+      +bold 
+      color: #515769
+      line-height: 1.4
+    & p 
+      margin-top: 5px 
+      color: #bfc1c7
+  & .content-wrap
+    margin-top: 30px 
+    display: flex 
+    justify-content: space-between
+    & .left 
+      width: 66%
+      border-right: 1px solid #cdcecf
+      padding-top: 10px 
+      & p 
+        margin-bottom: 15px 
+        font-size: 15px
+        color: #a6a7aa
+        line-height: 1.4 
+      & .links 
+        display: flex
+        & a 
+          color: #515769
+          font-size: 13px 
+          +semi 
+          margin-left: 4px 
+          &:first-of-type
+            margin-left: 0
+          &:hover
+            opacity: .7
+    & .right 
+      width: 30%
+      padding-top: 10px 
+      & p 
+        margin-bottom: 5px 
+        font-size: 15px
+        color: #a6a7aa
+        +bold 
+        line-height: 1.4 
+        & span 
+          +reg 
+.fancybox-container
+  transition-duration: 0ms
+  & .fancybox-bg
+    background: rgba(81,87,105,.4)
+    opacity: 1
+    transition: .3s linear 
+    transition-timing-function: cubic-bezier(.7,1,.7,1)
+  & .fancybox-inner 
+    & .fancybox-stage
+      & .fancybox-slide--html
+        padding: 0
+        & .fancybox-content 
+          cursor: default
+          & .fancybox-close-small
+            &:hover::before 
+              color: #81848f
+            &::before
+              content: 'Hide'
+              position: absolute
+              top: 30px 
+              right: 30px 
+              font-size: 13px
+              +bold 
+              color: #c5c6cb
+              transition: .3s linear 
+              transition-timing-function: cubic-bezier(.7,1,.7,1)
+            & svg 
+              display: none 
+
+
+
+
+  

@@ -52,3 +52,9 @@ $('.main-menu a').click(function () {
 
 /***************    WOW     ********************/
 new WOW().init();
+
+/****************   fancybox     *****************/
+$('[data-fancybox]').fancybox({
+  arrows: false,
+  infobar: false
+});
